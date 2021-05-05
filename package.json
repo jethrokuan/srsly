@@ -1,0 +1,48 @@
+{
+  "name": "srsly",
+  "version": "1.0.0",
+  "description": "srsly",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
+    "serve": "webpack serve",
+    "watch": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^1.11.9",
+    "marked": "^2.0.3",
+    "meiosis-routing": "^3.0.0",
+    "meiosis-setup": "^5.2.0-beta.1",
+    "mergerino": "^0.4.0",
+    "mithril": "^2.0.4",
+    "nes.css": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@webpack-cli/generators": "^2.0.0",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "dotenv-webpack": "^7.0.2",
+    "html-webpack-plugin": "^5.3.1",
+    "image-minimizer-webpack-plugin": "^2.2.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^9.0.0",
+    "meiosis-tracer": "^4.0.0",
+    "postcss": "^8.2.13",
+    "postcss-loader": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
