@@ -71,7 +71,6 @@ export const Actions = (update) => ({
       return c1["percent_overdue"] > c2["percent_overdue"];
     });
     if (filteredCards.length === 0) {
-      console.log("HERE");
       return update({
         review: {
           status: "done",
