@@ -15,6 +15,7 @@ import { Navbar } from "./views/navbar";
 import { Dashboard } from "./views/dashboard";
 import { Review } from "./views/review";
 import { Login } from "./views/login";
+import { Help } from "./views/help";
 import { Settings } from "./views/settings";
 
 import { Actions } from "./actions";
@@ -23,6 +24,7 @@ import { Effects } from "./effects";
 
 const componentMap = {
   Dashboard,
+  Help,
   Login,
   Review,
   Settings,

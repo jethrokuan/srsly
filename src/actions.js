@@ -87,6 +87,9 @@ export const Actions = (update) => ({
     }
   },
   syncCards: async (profile) => {
+    update({
+      syncing: true,
+    });
     const result = await m.request({
       method: "GET",
       url: "https://api.hypothes.is/api/search",
@@ -114,6 +117,7 @@ export const Actions = (update) => ({
       .from("cards")
       .upsert(rows);
     update({
+      syncing: false,
       dashboard: {
         status: "loading",
       },

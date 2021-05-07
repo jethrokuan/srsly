@@ -5,6 +5,7 @@ import { createRouteSegments, routeTransition } from "meiosis-routing/state";
 export const Route = createRouteSegments([
   "Dashboard",
   "Login",
+  "Help",
   "Review",
   "Settings",
   "NotFound",
@@ -13,6 +14,7 @@ export const Route = createRouteSegments([
 const routeConfig = {
   Review: "/",
   Login: "/login",
+  Help: "/help",
   Dashboard: "/dashboard",
   Settings: "/settings",
   NotFound: "/:404...",

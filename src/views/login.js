@@ -55,7 +55,7 @@ export const Login = {
                   returnTo
                 ),
             },
-            "Signup"
+            "Sign Up"
           )
         )
       )
