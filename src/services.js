@@ -7,7 +7,8 @@ const routeService = (state) => ({
 });
 
 const protectedService = (state) => {
-  if (state.route[0]?.id !== "Login" && !state.user) {
+  const unprotectedRoutes = ["Login", "Help"];
+  if (!unprotectedRoutes.includes(state.route[0]?.id) && !state.user) {
     const route = [
       Route.Login({
         message: "Please login.",

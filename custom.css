@@ -15,7 +15,7 @@ html {
   margin-bottom: 1.5rem !important;
 }
 
-.nes-container {
+.m3 {
   margin: 3rem 0;
 }
 
@@ -133,4 +133,24 @@ nav ul {
   60% {
     transform: translateY(-15px);
   }
+}
+
+.is-card {
+  width: 45%;
+}
+
+section.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #ccc;
+}
+
+footer a {
+  color: #f45d4c;
 }

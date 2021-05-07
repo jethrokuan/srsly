@@ -12,6 +12,7 @@ import { Route, Router, router, routes, navigateTo } from "./router";
 import { supabase } from "./supabase";
 
 import { Navbar } from "./views/navbar";
+import { Footer } from "./views/footer";
 import { Dashboard } from "./views/dashboard";
 import { Review } from "./views/review";
 import { Login } from "./views/login";
@@ -39,9 +40,10 @@ const Root = {
 
     return m(
       "div.container",
-      state.user && m(Navbar, { state, actions }),
-      message ? m("div.nes-container.is-dark", message) : null,
-      m(Component, { state, actions, routing })
+      m(Navbar, { state, actions }),
+      message ? m("div.nes-container.m3", message) : null,
+      m(Component, { state, actions, routing }),
+      m(Footer)
     );
   },
 };
