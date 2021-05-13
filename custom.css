@@ -154,3 +154,18 @@ footer {
 footer a {
   color: #f45d4c;
 }
+
+@media(max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+  section.cards {
+    margin: 0;
+    flex-direction: column;
+  }
+  
+  .is-card {
+    margin: 1rem 0;
+    width: 100%;
+  }
+}

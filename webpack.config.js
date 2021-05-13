@@ -3,6 +3,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -17,6 +18,11 @@ module.exports = {
   plugins: [
     new Dotenv({
       systemvars: true,
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: "static", to: "." },
+      ],
     }),
     new HtmlWebpackPlugin({
       template: "index.html",
